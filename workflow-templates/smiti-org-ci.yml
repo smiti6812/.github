@@ -1,0 +1,15 @@
+name: Smiti Org CI
+
+on:
+  push:
+  
+jobs:
+  build:
+    runs-on: windows-latest    
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Run a one line script
+        run: echo This my org!
+        shell: powershell
+  
